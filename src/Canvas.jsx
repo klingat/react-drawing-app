@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import { useCanvas } from './CanvasContext'
+import { COLOR_OPTIONS } from './const/colors'
+import { useCanvas } from './hooks/CanvasContext'
 
 const ColorPicker = styled.div`
   display: flex;
@@ -14,19 +15,6 @@ const ColorSwatch = styled.button`
   border-radius: 20px;
   background: ${(props) => props.color};
 `
-
-const COLOR_OPTIONS = [
-  'red',
-  'orange',
-  'yellow',
-  'green',
-  'blue',
-  'purple',
-  'black',
-  'brown',
-  'grey',
-  'white',
-]
 
 export function Canvas() {
   const {
