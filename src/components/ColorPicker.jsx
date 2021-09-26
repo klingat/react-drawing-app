@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 const PickerContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 5px;
 `

@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# React Drawing App w/ Canvas 🎨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It was a rainy afternoon and I was bored, I had an idea for an app that would eventually require some kind of way for the user to input a drawing. This is my proof of concept. If you're reading this, enjoy I guess?
+
+## Coming soon?
+
+- Ability to export your creation
+- Hosted app
+- Tests
+- Better responsiveness
+- Color fill bucket tool
+- Satisfying animation interactions
 
 ## Available Scripts
 
@@ -14,10 +23,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `yarn test` - WIP
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn install`
+
+Install all the packages.
 
 ### `yarn build`
 
@@ -68,3 +81,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Credits
+
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+- Maksin Invanov's [YouTube tutorial](https://www.youtube.com/watch?v=FLESHMJ-bI0).
