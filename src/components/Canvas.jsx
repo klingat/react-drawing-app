@@ -4,6 +4,7 @@ import { ColorPicker } from './ColorPicker'
 import { COLOR_OPTIONS } from '../const/colors'
 import { useCanvas } from '../hooks/CanvasContext'
 import { ClearCanvasButton } from './ClearCanvasButton'
+import { StrokeWidthPicker } from './StrokeWidthPicker'
 
 const Header = styled.header`
   width: 100%;
@@ -22,6 +23,8 @@ export function Canvas() {
     finishDrawing,
     draw,
     setNewPathColor,
+    strokeWidth,
+    setNewStrokeWidth,
   } = useCanvas()
 
   useEffect(() => {
@@ -32,6 +35,10 @@ export function Canvas() {
     <>
       <Header>
         <ColorPicker colors={COLOR_OPTIONS} onPick={setNewPathColor} />
+        <StrokeWidthPicker
+          strokeWidth={strokeWidth}
+          onChange={setNewStrokeWidth}
+        />
         <ClearCanvasButton />
       </Header>
       <canvas

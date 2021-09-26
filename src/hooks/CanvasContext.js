@@ -3,9 +3,13 @@ import PropTypes from 'prop-types'
 
 const CanvasContext = React.createContext()
 
+const DEFAULT_STROKE_WIDTH = 5
+
 export const CanvasProvider = ({ children }) => {
   const [isDrawing, setIsDrawing] = useState(false)
   const [pathColor, setPathColor] = useState('#000')
+  const [strokeWidth, setStrokeWidth] = useState(DEFAULT_STROKE_WIDTH)
+
   const canvasRef = useRef(null)
   const contextRef = useRef(null)
 
@@ -20,7 +24,7 @@ export const CanvasProvider = ({ children }) => {
     context.scale(2, 2)
     context.lineCap = 'round'
     context.strokeStyle = pathColor
-    context.lineWidth = 5
+    context.lineWidth = strokeWidth
     context.fillStyle = 'white'
     context.fillRect(0, 0, canvas.width, canvas.height)
     contextRef.current = context
@@ -61,6 +65,17 @@ export const CanvasProvider = ({ children }) => {
     context.strokeStyle = color
   }
 
+  const setNewStrokeWidth = (newWidth) => {
+    let width = newWidth
+    if (newWidth < 1) {
+      width = 1
+    }
+    setStrokeWidth(width)
+    const canvas = canvasRef.current
+    const context = canvas.getContext('2d')
+    context.lineWidth = width
+  }
+
   return (
     <CanvasContext.Provider
       value={{
@@ -72,6 +87,8 @@ export const CanvasProvider = ({ children }) => {
         clearCanvas,
         draw,
         setNewPathColor,
+        strokeWidth,
+        setNewStrokeWidth,
       }}
     >
       {children}

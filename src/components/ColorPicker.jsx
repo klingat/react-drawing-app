@@ -12,7 +12,10 @@ const ColorSwatch = styled.button`
   height: 40px;
   width: 40px;
   border-radius: 8px;
-  border: none;
+  border: 2px solid
+    ${({ color }) => {
+      return `99${color}`
+    }};
   background: ${({ color }) => color};
   &:hover {
     transform: scale(1.2);
