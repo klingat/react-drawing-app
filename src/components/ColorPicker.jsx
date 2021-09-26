@@ -11,7 +11,7 @@ const PickerContainer = styled.div`
 const ColorSwatch = styled.button`
   height: 40px;
   width: 40px;
-  border-radius: 20px;
+  border-radius: 8px;
   border: none;
   background: ${({ color }) => color};
   &:hover {

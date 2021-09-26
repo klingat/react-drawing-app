@@ -12,10 +12,10 @@ export const COLOR_OPTIONS = [
   '#CA9CE1', // light purple
   '#FFA9E7', // baby pink
   '#ED33B9', // bright pink
-  'black',
   '#AF9164', // light brown
-  '#2B2118', // dark brown
-  'grey',
+  '#503B31', // dark brown
   'white',
+  'grey',
+  'black',
   '#F7F3E3', // off white
 ]
