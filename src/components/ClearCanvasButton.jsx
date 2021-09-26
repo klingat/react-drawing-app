@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCanvas } from './hooks/CanvasContext'
+import { useCanvas } from '../hooks/CanvasContext'
 
 export const ClearCanvasButton = () => {
   const { clearCanvas } = useCanvas()

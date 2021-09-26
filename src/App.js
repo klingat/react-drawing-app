@@ -1,6 +1,6 @@
 import React from 'react'
 import { Canvas } from './Canvas'
-import { ClearCanvasButton } from './ClearCanvasButton'
+import { ClearCanvasButton } from './components/ClearCanvasButton'
 
 function App() {
   return (
