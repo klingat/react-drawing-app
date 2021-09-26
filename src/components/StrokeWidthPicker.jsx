@@ -12,6 +12,7 @@ const PickerButton = styled(Button)`
   width: 40px;
   padding: 0;
   border-radius: 20px;
+  font-size: 25px;
 `
 
 const InputWrapper = styled.div`
@@ -20,7 +21,7 @@ const InputWrapper = styled.div`
   justify-content: center;
   border-radius: 8px;
   border: 2px solid black;
-  background: rgba(255, 255, 255, 0.5);
+  background: white;
   margin: 0 10px;
 
   /* Chrome, Safari, Edge, Opera */
@@ -64,7 +65,7 @@ export const StrokeWidthPicker = ({ strokeWidth, onChange }) => {
           onChange(strokeWidth - 1)
         }}
       >
-        -
+        −
       </PickerButton>
       <InputWrapper>
         <StrokeInput
@@ -72,9 +73,9 @@ export const StrokeWidthPicker = ({ strokeWidth, onChange }) => {
           value={strokeWidthInput}
           onChange={(event) => setStrokeWidthInput(event.target.value)}
           onKeyPress={(event) =>
-            event.key === 'Enter' && onChange(event.target.value)
+            event.key === 'Enter' && onChange(Number(event.target.value))
           }
-          onBlur={(event) => onChange(event.target.value)}
+          onBlur={(event) => onChange(Number(event.target.value))}
         />
       </InputWrapper>
 

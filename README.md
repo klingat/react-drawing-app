@@ -1,6 +1,8 @@
 # React Drawing App w/ Canvas 🎨
 
-It was a rainy afternoon and I was bored, I had an idea for an app that would eventually require some kind of way for the user to input a drawing. This is my proof of concept. If you're reading this, enjoy I guess?
+Just for fun. Wanted to one day add a user-inputted drawing for a future project, so this is the proof-of-concept/exploration. Enjoy?
+
+<img src="https://media3.giphy.com/media/ly3tDu2pAwQwIFn3wg/giphy.gif?cid=790b7611bb8ef27a54fb326b85743fb260566fe03dba1c83&rid=giphy.gif&ct=g" width="350" />
 
 ## Coming soon?
 

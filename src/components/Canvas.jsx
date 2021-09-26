@@ -15,6 +15,7 @@ const Header = styled.header`
   padding: 10px;
   flex-wrap: wrap;
   gap: 10px;
+  border-bottom: 2px solid black;
 `
 
 export function Canvas() {

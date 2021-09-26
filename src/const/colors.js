@@ -17,5 +17,4 @@ export const COLOR_OPTIONS = [
   'white',
   'grey',
   'black',
-  '#F7F3E3', // off white
 ]
